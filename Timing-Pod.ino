@@ -66,11 +66,11 @@ void setup()
    // while (!Serial); {}                                // Do nothing if no serial port is opened (added for Arduinos based on ATMEGA32U4)    
     setSyncProvider(RTC.get);   // the function to get the time from the RTC
   
-    if (timeStatus() != timeSet)  {
-        Serial.println( F("Unable to sync with the RTC"));
-    }   else {
-        Serial.println( F("RTC current time is")); 
-    }
+  //  if (timeStatus() != timeSet)  {
+  //      Serial.println( F("Unable to sync with the RTC"));
+  //  }   else {
+  //      Serial.println( F("RTC current time is")); 
+  //  }
        
     myGLCD.InitLCD();                                     // initialise LCD 70 default 90 for darker
     initIoPins();
